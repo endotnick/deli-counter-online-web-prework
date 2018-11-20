@@ -9,7 +9,7 @@ end
 def display_line(line)
   out = 'The line is currently:'
   line.each_with_index do |customer, index|
-    out += " #{index}. #{customer}"
+    out += " #{index + 1}. #{customer}"
   end
   puts out
 end
