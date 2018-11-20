@@ -1,6 +1,9 @@
 def line(deli)
-  puts 'The line is currently empty.' if deli.size == 0
-  display_line(deli)
+  if deli.size == 0
+    puts 'The line is currently empty.'
+  else
+    display_line(deli)
+  end
 end
 
 def display_line(line)
